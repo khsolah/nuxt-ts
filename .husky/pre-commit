@@ -1,0 +1,10 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+BRANCH=$(git rev-parse --abbrev-ref HEAD | tr '[:upper:]' '[:lower:]')
+if [[ "$BRANCH" =~ "master" ]]; then
+  echo "\033[1;93m [Husky] \033[m You are on \033[1;91m $BRANCH \033[m branch! Please develop on other branch."
+  exit 1
+fi
+
+npx lint-staged

@@ -7,14 +7,14 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint:ts": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
-    "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
+    "lint:ts": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore . --cache",
+    "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore --cache",
     "lint": "npm run lint:ts && npm run lint:style",
     "test": "jest"
   },
   "lint-staged": {
-    "*.{js,vue}": "eslint",
-    "*.{css,vue}": "stylelint"
+    "*.{js,ts,vue}": ["eslint --cache --fix", "prettier --write"],
+    "*.{css,vue}": "stylelint --cache --fix"
   },
   "husky": {
     "hooks": {
