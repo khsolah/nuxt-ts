@@ -10,7 +10,7 @@
     "lint:ts": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore . --cache",
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore --cache",
     "lint": "npm run lint:ts && npm run lint:style",
-    "test": "jest"
+    "test": "jest --cache"
   },
   "lint-staged": {
     "*.{js,ts,vue}": [
