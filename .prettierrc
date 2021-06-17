@@ -1,4 +1,9 @@
 {
   "semi": false,
-  "singleQuote": true
+  "tabWidth": 2,
+  "singleQuote": true,
+  "arrowParens": "avoid",
+  "trailingComma": "none",
+  "jsxBracketSameLine": false,
+  "spaceBeforeFunctionParens": true
 }
