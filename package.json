@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "analysis:windi": "windicss-analysis",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
@@ -49,7 +50,7 @@
     "husky": "^4.3.8",
     "jest": "^26.6.3",
     "lint-staged": "^10.5.4",
-    "nuxt-windicss": "^0.4.4",
+    "nuxt-windicss": "^1.0.3",
     "prettier": "^2.2.1",
     "standard-version": "^9.3.0",
     "stylelint": "^13.12.0",
@@ -57,6 +58,7 @@
     "stylelint-config-standard": "^21.0.0",
     "ts-jest": "^26.5.4",
     "ts-node": "^10.0.0",
-    "vue-jest": "^3.0.4"
+    "vue-jest": "^3.0.4",
+    "windicss-analysis": "^0.2.0"
   }
 }
