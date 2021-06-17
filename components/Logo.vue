@@ -1,6 +1,6 @@
 <template>
   <svg
-    class="NuxtLogo"
+    class="NuxtLogo block"
     width="245"
     height="180"
     viewBox="0 0 452 342"
