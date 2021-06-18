@@ -65,8 +65,10 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 **Table of contents**
 
 - [01 - Project Structure](docs/project-structure)
-- [02 - Add Plugins](docs/plugins)
-- [02 - Vuex](docs/vuex)
-  - [Root Module](docs/root-module)
-  - [Namespaced Module](docs/namespaced-module)
-- [03 - Testing](docs/testing)
+- [02 - Plugins](docs/plugins)
+  - [02.1 - Lazyloading](docs/lazyloading)
+- [03 - Middleware](docs/middleware)
+- [04 - Vuex](docs/vuex)
+  - [04.1 - Root Module](docs/root-module)
+  - [04.2 - Namespaced Module](docs/namespaced-module)
+- [05 - Testing](docs/testing)
