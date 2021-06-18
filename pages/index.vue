@@ -21,16 +21,15 @@
           rel="noopener noreferrer"
           class="button--green"
         >
-          Documentation
+          Middleware
         </nuxt-link>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
+        <nuxt-link
+          :to="{ name: 'lazyloading' }"
           rel="noopener noreferrer"
           class="button--grey"
         >
-          GitHub
-        </a>
+          Lazyloading
+        </nuxt-link>
       </div>
     </div>
   </div>
