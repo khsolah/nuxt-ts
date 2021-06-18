@@ -1,5 +1,37 @@
 # nuxt-ts
 
+## Before starting work, you have to know
+
+> 1. 以 git cz 取代 git commit
+> 2. 不能在 master 上提交 commit
+> 3. 在更版之前，記得要執行 npm run release 產 changelog
+
+### install [git-cz](https://juejin.cn/post/6844903606815064077)
+
+```bash
+# git-cz
+$ npm install -g commitizen cz-conventional-changelog
+$ echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
+```
+
+### 提交 commit
+
+```bash
+✘ git commit -m '💩 commit'
+✓ git cz
+```
+
+在完成 git cz 後，打 commit 之前，會先執行 .husky/pre-commit，而這個 pre-commit 會做兩件事：
+
+1. 確認目前的 branch，如果是 master 則直接報錯，取消 commit
+2. lint fix 所有提交 commit 的檔案
+
+### npm run release
+
+這個指令會產生一份 changelog，並提交一個 release commit
+
+---
+
 ## Build Setup
 
 ```bash
@@ -15,6 +47,26 @@ $ npm run start
 
 # generate static project
 $ npm run generate
+
+# lint files
+$ lint # lint all files
+$ lint:style # lint css
+$ lint:ts # lint js,ts, and vue
+
+# unit test
+$ npm run test
+
+# create release log
+$ npm run release
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org), [Typescript Nuxtjs docs](https://typescript.nuxtjs.org/zh-hant/).
+
+**Table of contents**
+
+- [01 - Project Structure](docs/project-structure)
+- [02 - Add Plugins](docs/plugins)
+- [02 - Vuex](docs/vuex)
+  - [Root Module](docs/root-module)
+  - [Namespaced Module](docs/namespaced-module)
+- [03 - Testing](docs/testing)
