@@ -16,14 +16,13 @@
       <Logo />
       <h1 class="title text-center text-size-[40px] leading-normal">NUXT.TS</h1>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
+        <nuxt-link
+          :to="{ name: 'middleware' }"
           rel="noopener noreferrer"
           class="button--green"
         >
           Documentation
-        </a>
+        </nuxt-link>
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
