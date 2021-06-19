@@ -12,7 +12,7 @@
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore --cache",
     "lint": "npm run lint:ts && npm run lint:style",
     "release": "standard-version",
-    "test": "jest --cache"
+    "test": "jest --cache --coverage"
   },
   "lint-staged": {
     "*.{js,ts,vue}": [
@@ -23,6 +23,7 @@
   },
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
     }
   },
@@ -33,6 +34,8 @@
     "vue-gtag": "^1.16.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@nuxt/types": "^2.15.3",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^6.0.0",
