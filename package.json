@@ -20,7 +20,8 @@
       "eslint --cache --fix",
       "prettier --write"
     ],
-    "*.{css,vue}": "stylelint --cache --fix"
+    "*.{css,vue}": "stylelint --cache --fix",
+    "*.{scss,vue}": "stylelint --syntax sass --cache --fix"
   },
   "husky": {
     "hooks": {
