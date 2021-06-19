@@ -9,8 +9,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:ts": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore . --cache",
-    "lint:scss": "stylelint \"**/*.{vue,scss}\" --syntax scss --ignore-path .gitignore --cache --fix",
-    "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore --cache",
+    "lint:style": "stylelint \"**/*.{css,scss,vue}\" --ignore-path .gitignore --cache",
     "lint": "npm run lint:ts && npm run lint:style",
     "release": "standard-version",
     "test": "jest --cache --coverage"
@@ -20,8 +19,7 @@
       "eslint --cache --fix",
       "prettier --write"
     ],
-    "*.{css,vue}": "stylelint --cache --fix",
-    "*.{scss,vue}": "stylelint --syntax sass --cache --fix"
+    "*.{css,scss,vue}": "stylelint --cache --fix"
   },
   "husky": {
     "hooks": {
