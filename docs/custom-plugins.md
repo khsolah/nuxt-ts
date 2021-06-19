@@ -1,6 +1,8 @@
-# Lazy Loading
+# Custom Plugins
 
-## Usage
+## Lazyloading
+
+### Usage
 
 use `v-lazy`
 
@@ -13,7 +15,7 @@ use `v-lazy`
 </template>
 ```
 
-## Implementation
+### Implementation
 
 implement a lazy-loading observer class
 
@@ -89,7 +91,9 @@ Vue.directive('lazy', {
 })
 ```
 
-register this plugin to `plugins` in `nuxt.config.ts`
+### Register Plugins
+
+register to `plugins` in `nuxt.config.ts`
 
 ```typescript
 export default {

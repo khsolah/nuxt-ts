@@ -66,7 +66,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 - [01 - Project Structure](docs/project-structure)
 - [02 - Plugins](docs/plugins)
-  - [02.1 - Lazyloading](docs/lazyloading)
+  - [02.1 - Nuxt Modules](docs/nuxt-modules)
+  - [02.2 - Vue Plugins](docs/vue-plugins)
+  - [02.3 - Custom Plugins](docs/custom-plugins)
 - [03 - Middleware](docs/middleware)
 - [04 - Vuex](docs/vuex)
   - [04.1 - Root Module](docs/root-module)
