@@ -20,8 +20,8 @@ export default {
   plugins: [
     '~/plugins/axios-accessor.ts',
     '~/plugins/cookies-accessor.ts',
-    { src: '~/plugins/vue-gtag.ts', mode: 'client' },
-    { src: '~/plugins/lazy-loading.ts', mode: 'client' }
+    { src: '~/plugins/lazy-loading.ts', mode: 'client' },
+    { src: '~/plugins/vue-gtag.ts', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
