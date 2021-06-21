@@ -1,4 +1,8 @@
-import { Store, CommitOptions, DispatchOptions } from 'vuex/types/index'
+import {
+  Store as VuexStore,
+  CommitOptions,
+  DispatchOptions
+} from 'vuex/types/index'
 import { State } from './state'
 import { Mutations } from './mutations'
 import { Actions } from './actions'
@@ -12,8 +16,8 @@ export type Namespaced<T, U extends string> = {
   [P in keyof T & string as `${U}/${P}`]: T[P]
 }
 
-export interface RootStore
-  extends Omit<Store<RootState>, 'getters' | 'commit' | 'dispatch'> {
+export interface Store
+  extends Omit<VuexStore<any>, 'getters' | 'commit' | 'dispatch'> {
   getters: {
     [K in keyof RootGetters]: ReturnType<RootGetters[K]>
   }
