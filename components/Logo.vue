@@ -1,6 +1,6 @@
 <template>
   <svg
-    class="NuxtLogo block"
+    class="NuxtLogo block mx-auto"
     width="245"
     height="180"
     viewBox="0 0 452 342"
@@ -21,8 +21,8 @@
   </svg>
 </template>
 
-<style>
-.NuxtLogo {
+<style lang="scss">
+.logo {
   animation: 1s appear;
   margin: auto;
 }
