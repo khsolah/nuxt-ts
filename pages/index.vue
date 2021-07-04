@@ -1,7 +1,6 @@
 <template>
   <div
     class="
-      container
       absolute
       top-0
       left-0

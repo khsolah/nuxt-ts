@@ -1,10 +1,10 @@
 <template>
-  <div class="container flex flex-col justify-center items-center">
+  <div class="flex flex-col justify-center items-center">
     <img
       v-for="item in 20"
       :key="item"
       v-lazy="imageUrl"
-      class="mb-4 my-auto w-[200px] h-[200px]"
+      class="mb-4 my-auto w-75 h-101px"
     />
   </div>
 </template>
